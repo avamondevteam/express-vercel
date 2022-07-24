@@ -1,11 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-/**
- * GET product list.
- *
- * @return product list | empty.
- */
 router.get("/", async (req, res) => {
   try {
     res.json({
@@ -27,7 +22,6 @@ router.get("/", async (req, res) => {
         {name:'Ocean Park 1', address: 'Dương Xá, Kiêu Kỵ, Gia Lâm, Hà Nội', id: 'R1.012726',type:'high' ,bedroom: 1, bathroom: 1, area: 45, price: 1.5 , content: 'Tọa lạc tại đại đô thị Vinhomes Ocean Park, The Zenpark là phân khu duy nhất sở hữu công viên nội khu mang phong cách resort Nhật Bản', image: ['https://storage.googleapis.com/digital-platform/1_PN_10_large_425d28c05e/1_PN_10_large_425d28c05e.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_4_large_1ecc5e6d18/1_PN_4_large_1ecc5e6d18.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_5_large_166f23673c/1_PN_5_large_166f23673c.jpg','https://storage.googleapis.com/digital-platform/1_PN_6_large_8b238627f5/1_PN_6_large_8b238627f5.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_8_large_4273dd9c61/1_PN_8_large_4273dd9c61.jpg']},
         {name:'Ocean Park 1', address: 'Dương Xá, Kiêu Kỵ, Gia Lâm, Hà Nội', id: 'R1.012726',type:'high' ,bedroom: 1, bathroom: 1, area: 45, price: 1.5 , content: 'Tọa lạc tại đại đô thị Vinhomes Ocean Park, The Zenpark là phân khu duy nhất sở hữu công viên nội khu mang phong cách resort Nhật Bản', image: ['https://storage.googleapis.com/digital-platform/1_PN_10_large_425d28c05e/1_PN_10_large_425d28c05e.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_4_large_1ecc5e6d18/1_PN_4_large_1ecc5e6d18.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_5_large_166f23673c/1_PN_5_large_166f23673c.jpg','https://storage.googleapis.com/digital-platform/1_PN_6_large_8b238627f5/1_PN_6_large_8b238627f5.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_8_large_4273dd9c61/1_PN_8_large_4273dd9c61.jpg']},
         {name:'Ocean Park 1', address: 'Dương Xá, Kiêu Kỵ, Gia Lâm, Hà Nội', id: 'R1.012726',type:'high' ,bedroom: 1, bathroom: 1, area: 45, price: 1.5 , content: 'Tọa lạc tại đại đô thị Vinhomes Ocean Park, The Zenpark là phân khu duy nhất sở hữu công viên nội khu mang phong cách resort Nhật Bản', image: ['https://storage.googleapis.com/digital-platform/1_PN_10_large_425d28c05e/1_PN_10_large_425d28c05e.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_4_large_1ecc5e6d18/1_PN_4_large_1ecc5e6d18.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_5_large_166f23673c/1_PN_5_large_166f23673c.jpg','https://storage.googleapis.com/digital-platform/1_PN_6_large_8b238627f5/1_PN_6_large_8b238627f5.jpg', 'https://storage.googleapis.com/digital-platform/1_PN_8_large_4273dd9c61/1_PN_8_large_4273dd9c61.jpg']},
-
     ]}
     });
   } catch (error) {
