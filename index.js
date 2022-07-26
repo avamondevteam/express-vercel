@@ -4,7 +4,7 @@ var cors = require('cors')
 const product = require("./api/product");
 
 app.use(cors({
-    origin: 'https://phuongdong.vercel.app'
+    origin: '*'
 }));
 
 app.use(express.json({ extended: false }));
