@@ -12,8 +12,7 @@ router.post("/", async (req, res) => {
       dbo.collection("Products").find({}).toArray(function(err, result) {
         if (err) throw err;
         db.close();
-        // console.log((req.body.project));
-        // res.send(JSON.stringify(req.body));
+  
         res.json({
           status: 200,
           message: "Get data has successfully",
